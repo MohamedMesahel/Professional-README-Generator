@@ -1,0 +1,4 @@
+* 
+# to gitignore every thing
+!.gitignore 
+# So you don't ignore the file itslef
