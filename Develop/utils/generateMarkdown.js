@@ -24,26 +24,26 @@ ${data.description}
 
 ## Table of contents
 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Licence](#Licence)
-- [Contributors](#Contributors)
-- [Test](#tests)
-- [Repository Link](#Repository)
-- [GitHub Info](#GitHub) 
-- [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributors](#contributors)
+- [Test](#test)
+- [Repository Link](#repo)
+- [GitHub Username](#username)
+- [E-mail](#email)
 
 
 ## Installation
 
-  ${data.install}
+  ${data.installation}
 
 ## Usage
 
 ${data.usage}
 
-## Licence
+## License
 
 ![Github licence](http://img.shields.io/badge/license-${data.license}-red.svg)
 
@@ -55,17 +55,18 @@ ${data.contributors}
 
 ${data.test}
 
+## Github Username
+
+${data.username}
+
+## E-mail
+${data.email}
 
 ## Repository
 
 - [Project Repo](${data.repo})
 
-## GitHub
 
-- [GitHub Profile](${githubInfo.profile})
-## Questions
-  If you have any questions about this projects, please contact me directly at ${githubInfo.email}. 
-  You can view more of my projects at https://github.com/${data.github}.
 `;
 }
 
