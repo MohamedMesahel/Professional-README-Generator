@@ -67,10 +67,25 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(`./output/${fileName}`, 
+    data, (err) => err ? console.error(err) : console.log('Your README file has been successfully created!'));
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((answers) => {
+            const markdownString = generateMarkdown(answers);
+            writeToFile("README.md", markdownString);
+        });
+}
 
 // Function call to initialize app
 init();
+// Use `Inquirer.prompt().then((answers) => {}) ` to prompt the user for answers
+// Then we'll use the user's `answers` to generatmarkdown (answers)
+// and store the result in `markdownText`
+// Use the generated `markdownText` to `writefile`
+// Function call to initialize app
