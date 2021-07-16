@@ -50,7 +50,7 @@ function init() {
                     "BSD 3 license",
                     "BSD 2 license",
                     "GNU GPL V3",
-                    "GNU GPL V2",
+                    "GNU GPL",
                     "MIT license",
                     "Mozilla Public License 2.0",
                     "N/A License"],
