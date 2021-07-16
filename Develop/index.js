@@ -44,13 +44,13 @@ function init() {
             },
             {
                 type: "list",
-                name: "license",
+                name: "licence",
                 message: "Please provide the project licence from the list or your badge link",
                 choices: ["Apache License 2.0",
                     "BSD 3 license",
                     "BSD 2 license",
-                    "GNU GPL V3",
-                    "GNU GPL",
+                    "GNU General Public License(GPL)",
+                    "GNU Library",
                     "MIT license",
                     "Mozilla Public License 2.0",
                     "N/A License"],
@@ -74,14 +74,14 @@ function init() {
             {
                 type: "input",
                 name: "username",
-                message: "Github Username?",
+                message: "What is your github user name?",
                 validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 
             },
             {
                 type: "input",
                 name: "email",
-                message: "E-mail?",
+                message: "What is your E-mail?",
                 validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 
             },
