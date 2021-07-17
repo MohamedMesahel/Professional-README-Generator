@@ -3,8 +3,7 @@
 const generateMarkdown = data => {
   
   return `
-# Project Title
- ${data.title}
+# Project  ${data.title}
 
  ![Github Badge] (https://img.shields.io/badge/Badges-${data.badge}-green)
 

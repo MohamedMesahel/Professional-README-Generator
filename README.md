@@ -16,14 +16,15 @@ After installation run command `node index.js` in the command line then the app 
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project.
+
 ## Challenges
 My challanges for this project was trying to put all the pieces together from JavaScript and NodeJS, however at the end I was abl to make sure that everything runnig smoothly.
 
 ### Screen Shots
-![](./assets/img/WeatherDashboard.png)
+![](./img/README.png)
 
 ## Demo 
-[README-Generator](https://mohamedmesahel.github.io/Weather-Dashboard/?)
+[README-Generator](https://www.awesomescreenshot.com/video/4523548?key=df7885971a5aefa8ba46195c1918ba18)
 
 ### Licensing
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
