@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-// function renderLicenseBadge(license) {
-//   switch (license) {
+// function renderLicenseBadge(data) {
+//   switch (data.license) {
 //     case "Apache License 2.0":
 //       return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)] ";
 //     case "BSD 3 license":
@@ -25,8 +25,8 @@
 // }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//   switch (license) {
+// function renderLicenseLink(data) {
+//   switch (data.license) {
 //     case "Apache License 2.0":
 //       return "(https://opensource.org/licenses/Apache-2.0)";
 //     case "BSD 3 license":
@@ -50,43 +50,19 @@
 // }
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-// function renderLicenseBadgeAndBadge(license) {
-//   switch (license) {
+// function renderLicenseBadgeAndBadge(data) {
+//   switch (data.license) {
 //     case "N/A License":
 //       return "";
 //     default:
-//       return `${renderLicenseBadge(license)}${renderLicenseLink(license)} \n\n`;
+//       return `${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)} \n\n`;
 //   }
 // }
-function licenseBadge(data) {
-  const licenseType = data.license[0];
-  let licenseString = " "
-  if (licenseType === "MIT") {
-    licenseString = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
-  };
-  if (licenseType === "GNU General Public License 2.0") {
-    licenseString = `![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)`
-  };
-  if (licenseType === "Apache License 2.0") {
-    licenseString = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
-  };
-  if (licenseType === "GNU General Public License 3.0") {
-    licenseString = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-  };
-  return licenseString
-};
+
+
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = data => {
-  // switch (data.license) {
-  //   case "Apache License 2.0":
-  //     licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-  //     break;
-  //   case "BSD 3 license":
-  //     licenseBadge = `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
-  //     break;
-  //   default:
-
-  //   }
+  
   return `
   
 **${data.title}**
@@ -120,7 +96,8 @@ ${data.usage}
 
 ## License
  
-This project is licensed under ${licenseBadge(data)}
+This project is licensed under ${data.licence}
+
 
 ## Contributors
 

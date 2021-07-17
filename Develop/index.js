@@ -3,6 +3,7 @@ const fs = require('fs');
 const inquirer = require("inquirer");
 const generatePage = require("./utils/generateMarkdown");
 
+
 // TODO: Create a function to initialize app
 function init() {
     inquirer
@@ -46,13 +47,14 @@ function init() {
                 type: "list",
                 name: "licence",
                 message: "Please provide the project licence from the list or your badge link",
-                choices: ["Apache License 2.0",
-                    "BSD 3 license",
-                    "BSD 2 license",
-                    "GNU General Public License(GPL)",
-                    "GNU Library",
+                choices: [
+                    "Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)] (https://opensource.org/licenses/Apache-2.0)",
+                    // "BSD 3 license",
+                    // "BSD 2 license",
+                    // "GNU General Public License(GPL)",
+                    // "GNU Library",
                     "MIT license",
-                    "Mozilla Public License 2.0",
+                    // "Mozilla Public License 2.0",
                     "N/A License"],
                 validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 
