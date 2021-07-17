@@ -102,7 +102,7 @@ ${data.usage}
 
 ## License
 
-This project is licensed under ${data.license}
+This project is licensed under ${data.licenseBadge}
 
 ## Contributors
 
