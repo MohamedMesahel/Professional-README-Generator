@@ -1,12 +1,12 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require('fs');
 const inquirer = require("inquirer");
 const generatePage = require("./utils/generateMarkdown");
 
-// Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer
-        // Create an array of questions for user input
+        // Array of questions for user input
         // Use `Inquirer.prompt().then((answers) => {}) ` to prompt the user for answers
         .prompt([
             {
@@ -102,7 +102,7 @@ function init() {
         });
 }
 
-// Create a function to write README file         
+// Function to write README file         
 // Use the generated `markdownText` to `writefile`
 
 function writeToFile(fileName, data) {
