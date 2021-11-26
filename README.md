@@ -36,9 +36,7 @@ Here's why:
 </details>
 
 ## About The Project
-<p align="center">
-<img  src="../Professional-README-Generator/img/README.png" width="45%">
-</p>
+![](./img/README.png)
 
 This open source project that allows user to generate qucik README file. 
 This app includes, how to use the app, how to install it, and how to make contributions.
