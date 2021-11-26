@@ -36,9 +36,8 @@ Here's why:
 </details>
 
 ## About The Project
-
 <p align="center">
-  <img alt="Light Mode" src="../Professional-README-Generator/img/README.png" width="60%"> 
+<img alt="Dark Mode" src="../Professional-README-Generator/img/README.png" width="45%">
 </p>
 
 This open source project that allows user to generate qucik README file. 
